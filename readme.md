@@ -19,8 +19,8 @@ Step --> Create GitHub repository then clone repository to local system. Create 
 (Create a file on master before making any push to develop to make other branch eligible to make push)
 
 Step --> Launch an instance and connect it then install Jenkins and java.
-
 Commands:
+
   sudo wget -O /usr/share/keyrings/jenkins-keyring.asc \
     https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key
   echo "deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc]" \
