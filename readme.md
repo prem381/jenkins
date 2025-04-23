@@ -8,7 +8,7 @@ Create a pipeline in Jenkinsto:
 Once push is made to develop branch, trigger job test. This will copy git files to test node.
 If test job is successful, prod job should be triggered and copy files to prod node.
 
-# =============================> SOLUTIONS <====================================================
+# =======================> SOLUTIONS <============================
 
 # ==Requirement==
 1. AWS account
