@@ -8,9 +8,9 @@ Create a pipeline in Jenkinsto:
 Once push is made to develop branch, trigger job test. This will copy git files to test node.
 If test job is successful, prod job should be triggered and copy files to prod node.
 
-===> SOLUTIONS <===
+# =============================> SOLUTIONS <====================================================
 
-==Requirement==
+# ==Requirement==
 1. AWS account
 2. GitHub account
 
@@ -18,7 +18,7 @@ Step --> Create GitHub repository then clone repository to local system. Create 
 
 (Create a file on master before making any push to develop to make other branch eligible to make push)
 
-Step --> Launch an instance and connect it then install Jenkins and java.
+# Step --> Launch an instance and connect it then install Jenkins and java.
 Commands:
 
   sudo wget -O /usr/share/keyrings/jenkins-keyring.asc \
@@ -30,19 +30,19 @@ Commands:
   sudo apt-get install Jenkins
   sudo apt install openjdk-17-jdk -y
 
-Step --> Connect Jenkins using instance public IP (e.g- instance-IP:8080)
+# Step --> Connect Jenkins using instance public IP (e.g- instance-IP:8080)
 
-Step --> Create two instance (test and prod node), connect update and install java.
+# Step --> Create two instance (test and prod node), connect update and install java.
 
 	Sudo apt update -y
 	Sudo apt install openjdk-17-jdk -y
 
-Step --> Add both instances on Jenkins as test and prod node.
+# Step --> Add both instances on Jenkins as test and prod node.
 
-Step --> Create a webhook so that jobs would be triggered by GitHub.
+# Step --> Create a webhook so that jobs would be triggered by GitHub.
 
-Step --> Create freestyle test and prod jobs on jenkins.
+# Step --> Create freestyle test and prod jobs on jenkins.
 
-Step --> Create a new file or update existing file on develop then commit and push to develop branch.
+# Step --> Create a new file or update existing file on develop then commit and push to develop branch.
 
-Verify jobs on jenkins.
+# Verify jobs on jenkins.
